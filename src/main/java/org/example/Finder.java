@@ -22,6 +22,9 @@ public class Finder {
 
         try (PrintStream stream = new PrintStream(new FileOutputStream(finder.getInputArgs().getOutFileName()))) {
             fileVisitor.getPaths().forEach(stream::println);
+        } catch (IOException e) {
+            e.printStackTrace();
+            fileVisitor.getPaths().forEach(System.out::println);
         }
     }
 }
