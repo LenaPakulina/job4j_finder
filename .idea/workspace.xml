@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87650235-4774-4adb-bfad-59a1231a0d0d" name="Changes" comment="Мелкофикс">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="87650235-4774-4adb-bfad-59a1231a0d0d" name="Changes" comment="Тестовое задание. Утилита &quot;поиск файлов&quot;. [#783]">
+      <change afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Finder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Finder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +19,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2czW8sW2etT8auQ2m1IhWVkcRGr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -36,9 +35,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/projects/job4j_finder/checkstyle.xml",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
   }
 }]]></component>
   <component name="RunManager">
@@ -95,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709116806335</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Тестовое задание. Утилита &quot;поиск файлов&quot;. [#783]">
+      <option name="closed" value="true" />
+      <created>1709117561318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709117561318</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +122,11 @@
     <MESSAGE value="Пробный коммит" />
     <MESSAGE value="Исправлены условия поиска предикатов" />
     <MESSAGE value="Мелкофикс" />
-    <option name="LAST_COMMIT_MESSAGE" value="Мелкофикс" />
+    <MESSAGE value="Тестовое задание. Утилита &quot;поиск файлов&quot;. [#783]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тестовое задание. Утилита &quot;поиск файлов&quot;. [#783]" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
