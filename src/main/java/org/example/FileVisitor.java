@@ -20,7 +20,6 @@ public class FileVisitor extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult visitFile(Path file,
                                      BasicFileAttributes attributes) throws IOException {
-        System.out.println(file);
         if (condition.test(file)) {
             paths.add(file);
         }

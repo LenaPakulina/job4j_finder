@@ -1,0 +1,3 @@
+C:\projects\job4j\1.txt
+C:\projects\job4j_finder\data\1.txt
+C:\projects\job4j_finder_old\data\1.txt

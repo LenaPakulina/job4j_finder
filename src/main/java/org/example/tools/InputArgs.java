@@ -36,6 +36,10 @@ public class InputArgs {
         typeSearch = TypeOfSearch.fromString(argsName.get("t"));
 
         outFileName = new File(argsName.get("o"));
+        File dirParent = outFileName.getParentFile();
+        if (!dirParent.exists()) {
+            dirParent.mkdirs();
+        }
         if (!outFileName.exists()) {
             outFileName.createNewFile();
         }
@@ -44,12 +48,13 @@ public class InputArgs {
     public Predicate<Path> getCondition() {
         return switch (typeSearch) {
             case MASK -> path -> {
-                String createRegEx = String.format("^%s$",
-                        file.replaceAll("*", ".*").replaceAll("?", "."));
-                return path.endsWith("txt");
+                String pattern = file.replaceAll("[.]", "[.]");
+                pattern = pattern.replaceAll("[*]", ".*");
+                pattern = pattern.replaceAll("[?]", ".?");
+                return Pattern.compile(pattern).matcher(path.getFileName().toString()).find();
             };
-            case REGEX -> path -> path.endsWith("txt");
-            case FILE_NAME -> path -> path.endsWith("txt");
+            case REGEX -> path -> Pattern.compile(file).matcher(path.getFileName().toString()).find();
+            case FILE_NAME -> path -> file.equalsIgnoreCase(path.getFileName().toString());
             default -> throw new IllegalArgumentException("Failed to create a search condition");
         };
     }
