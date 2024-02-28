@@ -16,7 +16,12 @@ public class Finder {
 
     public static void main(String[] args) throws IllegalArgumentException, IOException {
         Finder finder = new Finder();
-        finder.getInputArgs().validate(args);
+        try {
+            finder.getInputArgs().validate(args);
+        } catch (IllegalArgumentException e) {
+            System.out.println("The necessary parameters are not defined. For more information, see the README.");
+            throw e;
+        }
         FileVisitor fileVisitor = new FileVisitor(finder.getInputArgs().getCondition());
         Files.walkFileTree(finder.getInputArgs().getDir(), fileVisitor);
 
